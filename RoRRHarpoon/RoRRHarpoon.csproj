@@ -1,0 +1,355 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="R2API" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony20">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\0Harmony20.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.MonoMod.HookGenPatcher">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\BepInEx.MonoMod.HookGenPatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.MonoMod.Loader">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\BepInEx.MonoMod.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Decalicious">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Decalicious.dll</HintPath>
+    </Reference>
+    <Reference Include="EOS">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\EOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Facepunch.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericIK">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\GenericIK.dll</HintPath>
+    </Reference>
+    <Reference Include="HarmonyXInterop">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\HarmonyXInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="HGCSharpUtils">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\HGCSharpUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="HGUnityUtils">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\HGUnityUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="KinematicCharacterController">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\KinematicCharacterController.dll</HintPath>
+    </Reference>
+    <Reference Include="LegacyResourcesAPI">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\LegacyResourcesAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ModLoader">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\ModLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_CSharp">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Rewired_CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="RoR2">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\RoR2.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleJSON">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\SimpleJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Internals">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\System.ServiceModel.Internals.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Csg">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ProBuilder.Csg.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.KdTree">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ProBuilder.KdTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Poly2Tri">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Stl">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ProBuilder.Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Wwise">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Wwise.dll</HintPath>
+    </Reference>
+    <Reference Include="Zio">
+      <HintPath>..\..\vs-WolfoQoL\WolfoQualityOfLife\libs\Zio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

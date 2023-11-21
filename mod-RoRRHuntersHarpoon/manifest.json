@@ -1,0 +1,11 @@
+{
+    "name": "HuntersHarpoonReturns",
+    "version_number": "1.0.0",
+    "website_url": "",
+    "description": "Adds the buffs Hunter's Harpoon recieved in Risk of Rain Returns",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.9",
+		"RiskofThunder-HookGenPatcher-1.2.1",
+        "RiskofThunder-R2API_Language-1.0.1"
+    ]
+}
