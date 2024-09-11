@@ -9,7 +9,7 @@ using UnityEngine;
 namespace RoRRHarpoon
 {
     [BepInDependency(LanguageAPI.PluginGUID)]
-    [BepInPlugin("com.Wolfo.RoRRHuntersHarpoon", "HuntersHarpoonReturns", "1.0.0")]
+    [BepInPlugin("com.Wolfo.RoRRHuntersHarpoon", "HuntersHarpoonReturns", "1.0.2")]
     public class RoRRHarpoonMain : BaseUnityPlugin
     {
         public void Awake()
@@ -86,7 +86,7 @@ namespace RoRRHarpoon
                     return attackerBody;
                 });
                 
-                Debug.LogWarning("Applied Hunter's Harpoon Duration hook");
+                //Debug.Log("Applied Hunter's Harpoon Duration hook");
             }
             else
             {
